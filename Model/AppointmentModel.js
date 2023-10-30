@@ -2,14 +2,14 @@ const mongoose = require("mongoose");
 
 const appointmentSchema = new mongoose.Schema(
   {
-    Name: { type: String, required: true },
-    Image_URL: { type: String, required: true },
-    Specialization: { type: String, required: true },
-    Experience: { type: String, required: true },
-    Location: { type: String, required: true },
+    name: { type: String, required: true },
+    image: { type: String, required: true },
+    specialization: { type: String, required: true },
+    experience: { type: String, required: true },
+    location: { type: String, required: true },
     date: { type: Date, required: true },
     slots: { type: String, required: true },
-    Fee: { type: Number, required: true },
+    fee: { type: Number, required: true },
   },
   {
     versionKey: false,

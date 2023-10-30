@@ -5,24 +5,24 @@ const DoctorRouter = express.Router();
 DoctorRouter.post("/appointments", async (req, res) => {
   try {
     const {
-      Name,
-      Image_URL,
-      Specialization,
-      Experience,
-      Location,
+      name,
+      image,
+      specialization,
+      experience,
+      location,
       date,
       slots,
-      Fee,
+      fee,
     } = req.body;
     const doctor = await appointmentModel.create({
-      Name,
-      Image_URL,
-      Specialization,
-      Experience,
-      Location,
+      name,
+      image,
+      specialization,
+      experience,
+      location,
       date,
       slots,
-      Fee,
+      fee,
     });
     doctor.save();
     res.send("Doctor created");
