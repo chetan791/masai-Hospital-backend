@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/user", userRouter);
-app.use(auth);
+// app.use(auth);
 app.use("/doctor", DoctorRouter);
 
 app.listen(process.env.port, async () => {
